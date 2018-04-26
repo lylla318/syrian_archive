@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Syria D3.js Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="D3.js map of Syria and its districts.">
+    <meta charset="utf-8"> 
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+  
+  <!-- Tooltip box. It appears when user hovers over the map.  -->
+  <div id="tooltip" class="hidden">
+    <div><strong>Governorate:</strong> <span id="governorate">100</span></div>
+    <div><strong>District:</strong> <span id="district">200</span></div>
+  </div>
+
+  <div class="header">
+    <h1>Chemical Attacks in Syria</h1>
+  </div>
+
+  <!-- ADD D3.JS VISUALIZATION IN #VIZ.-->        
+  <div class='container-fluid'>
+      <div id="viz" class='col-md-8 text-center'></div>    
+  </div>
+  <!-- <h5>Data collected by the <a href="syrianarchive.org">Syria Archive</a>.</h5> -->
+
+
+  <script src="jquery-3.1.1.min.js"></script>  
+  <script src="d3.v4.min.js"></script>
+  <script src="d3.queue.v1.min.js"></script>
+  <script src="d3-tip.js"></script>
+  <script src="topojson.v1.min.js"></script>
+
+  <link rel="stylesheet" href="tooltip.css">
+
+  <!-- D3.js code creates map of Syria. -->
+  <script src="russian_attacks_map.js"></script>
+  </body>
+</html>

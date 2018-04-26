@@ -1,0 +1,71 @@
+/* CSS for tooltip box that appears when mouse hovers over D3.js map. */
+circle {
+  fill: none;
+  stroke: #cc0000;
+}
+#text-info {
+  width: 400px;
+  height: 400px;
+  /*background-color: purple;*/
+  margin-left: 65%;
+  margin-top: 10%;
+}
+.date {
+  font-size: 30px;
+  font-family: sans-serif;
+  width: 200px;
+  height: 100px;
+}
+.date {
+  font-size: 30px;
+  font-family: sans-serif;
+  width: 200px;
+  height: 100px;
+}
+/*path:hover {
+    fill: #72716c;
+}*/
+#tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 3; /* Makes tooltip box appear above other elements on webpage. */
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#attack-info {
+    position: absolute;
+    font-size: 20px;
+    margin-left: 1% !important;
+    margin-top: -4%;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    pointer-events: none;
+}
+#attack-info.hidden {
+    display: none;
+}
+#attack-info p {
+    margin-left: 5% !important;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
